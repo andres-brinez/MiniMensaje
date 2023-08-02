@@ -1,4 +1,6 @@
-# Descripción del Proyecto: Aplicación Minimalista de Mensajes
+# Descripción del Proyecto
+
+## Aplicación Minimalista de Mensajes
 
 La aplicación "MiniMensajes" es un proyecto de desarrollo de software que busca proporcionar una plataforma simple y minimalista para que los usuarios puedan compartir mensajes con la comunidad. Inspirada en la popularidad de las redes sociales como Twitter, MiniMensajes tiene como objetivo permitir a los usuarios ver y actualizar mensajes cortos y concisos.
 
