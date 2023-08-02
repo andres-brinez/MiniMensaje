@@ -38,3 +38,7 @@ La aplicación "MiniMensajes" no tiene la intención de competir con redes socia
 ## Nota Final:
 
 Este proyecto proporciona una excelente oportunidad para aplicar y reforzar los conocimientos de persistencia de datos en Java, al tiempo que se adquiere experiencia en el desarrollo de aplicaciones web o de escritorio. Con un diseño claro y una implementación cuidadosa, "MiniMensajes" puede convertirse en un proyecto exitoso y valioso para demostrar tus habilidades como desarrollador de software. ¡Adelante y mucho éxito en tu desarrollo!
+
+
+## Diagrama
+![image](https://github.com/andres-brinez/MiniMensaje/assets/94869227/a40f09ed-c871-411e-9db8-be1e57652020)
