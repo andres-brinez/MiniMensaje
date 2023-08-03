@@ -53,11 +53,9 @@ public class Main {
                     break;
 
                 case 4:
-                    // Eliminar mensaje
-                    System.out.println("Indica el ID del mensaje a eliminar");
-                    int idMessageDelete = sc.nextInt();
 
-                    controller.deleteMessage(idMessageDelete);
+                    // Eliminar mensaje
+                    controller.deleteMessage();
 
                     break;
 

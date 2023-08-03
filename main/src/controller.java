@@ -33,15 +33,22 @@ public class controller {
 
     }
 
-
-
-
     public static void readMessage(int idMessage) {
 
     }
 
+    public static void deleteMessage(/*int idMessage*/) {
 
-    public static void deleteMessage(int idMessage) {
+        int idMessage;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Indica el ID del mensaje a eliminar");
+        idMessage = sc.nextInt();
+
+        Dao.deleteMessage(idMessage);
+
+
 
     }
 

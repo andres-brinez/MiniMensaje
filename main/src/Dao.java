@@ -74,6 +74,32 @@ public class Dao {
 
     public static void deleteMessage(int idMessage){
 
+        Conexion dbConnect = new Conexion();
+
+        try (Connection con = dbConnect.getConnection()) {
+
+            // Insertar datos en la base de datos
+            PreparedStatement ps = null; // Se encarga de ejecutar las sentencias sql
+
+            try {
+
+                String query = "DELETE FROM mensajes WHERE id_mensaje = ?";
+                ps = con.prepareStatement(query); // Se encarga de ejecutar las sentencias sql
+                ps.setInt(1, idMessage); // El primer parametro es el numero de la columna y el segundo es el valor que se va a insertar
+                ps.executeUpdate(); // Ejecuta la sentencia sql
+                System.out.println("El mensaje ha sido borrado");
+
+            } catch (SQLException ex) {
+                System.out.println(ex);
+                System.out.println("No se pudo borrar el mensaje");
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+            System.out.println("No se pudo conectar a la base de datos");
+        }
+
+
+
     }
 
 
