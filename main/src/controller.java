@@ -29,6 +29,8 @@ public class controller {
 
     public static void seeAllMessages() {
 
+        Dao.seeAllMessages();
+
     }
 
 
