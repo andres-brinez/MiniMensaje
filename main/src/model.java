@@ -6,6 +6,8 @@ public class model {
     String authorMessage;
     String dateMessage;
 
+
+
     public model() {
     }
 

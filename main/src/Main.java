@@ -25,20 +25,8 @@ public class Main {
             switch (option) {
 
                 case 1:
-                    // Crear mensaje
-                    System.out.println("Escribe tu mensaje");
-                    String message = sc.nextLine();
-                    sc.nextLine();
 
-                    System.out.println("Tu nombre");
-                    String name = sc.nextLine();
-
-                    System.out.println("Tu email");
-                    String email = sc.nextLine();
-
-                    model messageObject = new model();
-
-                    controller.newMessage(messageObject);
+                    controller.newMessage();
 
                     break;
 
