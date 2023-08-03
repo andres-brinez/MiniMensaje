@@ -36,9 +36,7 @@ build/
 *.pb
 .idea/sonarlint/issuestore/index.pb
 *.pb
-*.pb
-*.pb
-.idea/sonarlint/issuestore/index.pb
-*.pb
+.idea/sonarlint/
 .idea/sonarlint/securityhotspotstore/index.pb
 *.pb
+out/
