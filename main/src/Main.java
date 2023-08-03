@@ -36,17 +36,8 @@ public class Main {
                     break;
 
                 case 3:
-                    // Editar mensaje
-                    System.out.println("Escribe tu nuevo mensaje");
-                    String messageUpdate = sc.nextLine();
-                    sc.nextLine();
-
-                    System.out.println("Indica el ID del mensaje a editar");
-                    int idMessageUpdate = sc.nextInt();
 
                     model messageObjectUpdate = new model();
-                    messageObjectUpdate.setIdMessage(idMessageUpdate);
-                    messageObjectUpdate.setMessage(messageUpdate);
 
                     controller.updateMessage(messageObjectUpdate);
 

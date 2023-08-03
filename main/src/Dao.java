@@ -105,9 +105,36 @@ public class Dao {
 
 
     public static void updateMessage(model message) {
-    }
 
+        Conexion dbConnect = new Conexion();
+
+        try (Connection con = dbConnect.getConnection()) {
+
+            // Insertar datos en la base de datos
+            PreparedStatement ps = null; // Se encarga de ejecutar las sentencias sql
+
+            try {
+
+                String query = "UPDATE mensajes SET mensaje = ? WHERE id_mensaje = ?";
+
+                ps = con.prepareStatement(query); // Se encarga de ejecutar las sentencias sql
+                ps.setString(1, message.getMessage()); // El primer parametro es el numero de la columna y el segundo es el valor que se va a insertar
+                ps.setInt(2, message.getIdMessage());
+                ps.executeUpdate(); // Ejecuta la sentencia sql
+
+                System.out.println("El mensaje ha sido actualizado");
+
+            } catch (SQLException ex) {
+                System.out.println(ex);
+                System.out.println("No se pudo actualizar el mensaje");
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+            System.out.println("No se pudo conectar a la base de datos");
+
+        }
     }
+}
 
 
 

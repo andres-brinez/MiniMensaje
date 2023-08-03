@@ -42,3 +42,5 @@ Este proyecto proporciona una excelente oportunidad para aplicar y reforzar los 
 
 ## Diagrama
 ![image](https://github.com/andres-brinez/MiniMensaje/assets/94869227/a40f09ed-c871-411e-9db8-be1e57652020)
+
+https://github.com/santiaguf/red_social - proyecto guia

@@ -54,6 +54,23 @@ public class controller {
 
     public static void updateMessage(model message) {
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Indica el ID del mensaje a editar");
+        int idMessageUpdate = sc.nextInt();
+
+        sc.nextLine(); // Limpiar el buffer
+
+        System.out.println("Escribe tu nuevo mensaje");
+        String messageUpdate = sc.nextLine();
+
+
+        message.setIdMessage(idMessageUpdate);
+        message.setMessage(messageUpdate);
+
+        Dao.updateMessage(message);
+
+
     }
 
 
